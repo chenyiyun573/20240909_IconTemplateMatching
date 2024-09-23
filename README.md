@@ -4,7 +4,13 @@
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
+
 ```
+
+### 20240923 0330 PT
+test the final llm no overlap in Desktop Agent backend. It does not work well, many mistakes. So currently, I am just using the most basic one in main.py.
+This version of code is stored as 1.0.2. and the screenshot and icon here is where the mistake happens. 
+
 
 ### 20240923 0158 PT
 think of one problem of main6_refine.py, it is actually edge detection, but after edge detection, the edge is just line, so the overlap area will be very small, actually, what I want is to ignore color here, so it should increase more icons recognized, not less. How to solve this problem, I mean I just want to ignore color, but edge will cause overlap area less which results in less icon recognized, it should be more by my desire. 
