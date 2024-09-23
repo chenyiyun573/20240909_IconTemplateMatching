@@ -6,6 +6,12 @@ source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
+### 20240923 0158 PT
+think of one problem of main6_refine.py, it is actually edge detection, but after edge detection, the edge is just line, so the overlap area will be very small, actually, what I want is to ignore color here, so it should increase more icons recognized, not less. How to solve this problem, I mean I just want to ignore color, but edge will cause overlap area less which results in less icon recognized, it should be more by my desire. 
+
+In this script, I choose main2_refine.py as the final.py which will be used in LLM later. Since it did not ignore color, and size adapting is not continous, some works need to be done later. 
+This version of code is stored as 1.0.1. 
+
 ### 20240918 1841 PT
 By asking GPT4 if there are some better methods to do this icon finding tasks. It gives answers like:
 1. Feature-Based Matching
